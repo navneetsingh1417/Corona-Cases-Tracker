@@ -64,6 +64,12 @@ public class SpecificCountry {
 	public void setDate(String date) {
 		this.date = date;
 	}
+
+	@Override
+	public String toString() {
+		return "SpecificCountry [confirmed=" + confirmed + ", deaths=" + deaths + ", recovered=" + recovered
+				+ ", active=" + active + ", date=" + date + "]";
+	}
 	
 	
 }

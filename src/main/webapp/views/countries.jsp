@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="icon" href="/assets/images/i.png">
 <meta charset="ISO-8859-1">
 <title>Corona Tracker</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -104,7 +105,7 @@ body{
 			<select name="category"
 				onchange='changeAction(this.value)'>
 				<c:forEach items="${countries}" var="country">
-					<option value="${country.slug}">${country.country}</option>
+					<option value="${country.country}">${country.country}</option>
 				</c:forEach>
 			</select> <br/><br/>
 			<div class="text-center">

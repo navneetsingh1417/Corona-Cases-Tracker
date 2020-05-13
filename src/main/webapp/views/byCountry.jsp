@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="icon" href="/assets/images/i.png">
 <meta charset="ISO-8859-1">
 <title>Corona Tracker</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -34,10 +35,10 @@
 			<div class="col-md-6">
 				<div class="card text-white bg-primary mb-3 mx-auto"
 					style="max-width: 18rem;">
-					<div class="card-header mx-auto">Global</div>
+					<div class="card-header mx-auto">${country.country }</div>
 					<div class="card-body mx-auto">
 						<h5 class="card-title">Total Confirmed Cases</h5>
-						<p class="card-text text-center">${country.confirmed}</p>
+						<p class="card-text text-center">${country.totalconfirmed}</p>
 					</div>
 				</div>
 
@@ -47,7 +48,7 @@
 
 				<div class="card text-white bg-info mb-3 mx-auto"
 					style="max-width: 18rem;">
-					<div class="card-header mx-auto">Global</div>
+					<div class="card-header mx-auto">${country.country }</div>
 					<div class="card-body mx-auto">
 						<h5 class="card-title">Currently Active</h5>
 						<p class="card-text text-center">${country.active}</p>
@@ -68,10 +69,10 @@
 
 				<div class="card text-white bg-danger mb-3 mx-auto"
 					style="max-width: 18rem;">
-					<div class="card-header mx-auto">Global</div>
+					<div class="card-header mx-auto">${country.country }</div>
 					<div class="card-body mx-auto">
 						<h5 class="card-title">Total Deaths</h5>
-						<p class="card-text text-center">${country.deaths}</p>
+						<p class="card-text text-center">${country.totaldeaths}</p>
 					</div>
 				</div>
 
@@ -80,10 +81,10 @@
 
 				<div class="card text-white bg-success mb-3 mx-auto"
 					style="max-width: 18rem;">
-					<div class="card-header mx-auto">Global</div>
+					<div class="card-header mx-auto">${country.country }</div>
 					<div class="card-body mx-auto">
 						<h5 class="card-title" >Total Recovered</h5>
-						<p class="card-text text-center">${country.recovered}</p>
+						<p class="card-text text-center">${country.totalrecovered}</p>
 					</div>
 				</div>
 			</div>

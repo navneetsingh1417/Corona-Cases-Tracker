@@ -27,9 +27,13 @@ public class CoronaServices {
 		return countries;
 	}
 	
-	public SpecificCountry getSpecificCountry(String countryName) {
-		List<SpecificCountry> countries = Arrays.asList(coronaRepo.specificCountry(countryName));
-		SpecificCountry country = countries.get(countries.size()-1);
+	public Country getSpecificCountry(String countryName) {
+		//List<SpecificCountry> countries = Arrays.asList(coronaRepo.specificCountry(countryName));
+		Country country = coronaRepo.specificCountry(countryName);
+		//SpecificCountry country = countries.get(countries.size()-1);
+//		SpecificCountry country = countries[countries.length-1];
+//		System.out.println(countries[countries.length-1]);
+//		System.out.println(country);
 		return country;
 	}
 }

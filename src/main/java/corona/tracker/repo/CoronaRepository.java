@@ -27,16 +27,16 @@ public class CoronaRepository {
 		RestTemplate rest = new RestTemplate();
 		HttpHeaders headers = new HttpHeaders();
 		headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
-		Country[] countries = rest.getForObject("https://api.covid19api.com/countries", Country[].class);
+		Country[] countries = rest.getForObject("https://coronavirus-19-api.herokuapp.com/countries", Country[].class);
 		return countries;
 	}
 	
-	public SpecificCountry[] specificCountry(String countryName) {
+	public Country specificCountry(String countryName) {
 		RestTemplate rest = new RestTemplate();
 		HttpHeaders headers = new HttpHeaders();
 		headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
-		SpecificCountry[] countries = rest.getForObject("https://api.covid19api.com/dayone/country/"+countryName, SpecificCountry[].class);
-		return countries;
+		Country country = rest.getForObject("https://coronavirus-19-api.herokuapp.com/countries/"+countryName, Country.class);
+		return country;
 	}
 	
 }

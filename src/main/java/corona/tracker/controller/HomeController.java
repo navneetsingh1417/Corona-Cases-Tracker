@@ -46,14 +46,14 @@ public class HomeController {
 	
 	@PostMapping("country/{countrySlug}")
 	public String byCountryName(@PathVariable("countrySlug") String countrySlug,Model model){
-		SpecificCountry country = coronaServices.getSpecificCountry(countrySlug);
+		Country country = coronaServices.getSpecificCountry(countrySlug);
 		model.addAttribute("country", country);
 		return "byCountry";
 	}
 	
 	@GetMapping("country/{countrySlug}")
 	public String byCountryName2(@PathVariable("countrySlug") String countrySlug,Model model){
-		SpecificCountry country = coronaServices.getSpecificCountry(countrySlug);
+		Country country = coronaServices.getSpecificCountry(countrySlug);
 		model.addAttribute("country", country);
 		return "byCountry";
 	}

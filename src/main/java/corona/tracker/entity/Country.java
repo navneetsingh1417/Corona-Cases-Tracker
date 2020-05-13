@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Country implements Comparable<Country>{
 
-	@JsonProperty("Country")
+	@JsonProperty("country")
 	private String country;
 	
 	@JsonProperty("CountryCode")
@@ -18,21 +18,32 @@ public class Country implements Comparable<Country>{
 	@JsonProperty("NewConfirmed")
 	private Long newconfirmed;
 	
-	@JsonProperty("TotalConfirmed")
+	@JsonProperty("cases")
 	private Long totalconfirmed;
 	
 	@JsonProperty("NewDeaths")
 	private Long newdeaths;
 	
-	@JsonProperty("TotalDeaths")
+	@JsonProperty("deaths")
 	private Long totaldeaths;
 	
 	@JsonProperty("NewRecovered")
 	private Long newrecovered;
 	
-	@JsonProperty("TotalRecovered")
+	@JsonProperty("recovered")
 	private Long totalrecovered;
 	
+	@JsonProperty("active")
+	private Long active;
+	
+	public Long getActive() {
+		return active;
+	}
+
+	public void setActive(Long active) {
+		this.active = active;
+	}
+
 	@JsonProperty("Date")
 	private String date;
 	
