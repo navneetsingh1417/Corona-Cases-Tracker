@@ -137,7 +137,7 @@ a {
 					<div class="card-header mx-auto" style="font-size: 20px;">Global</div>
 					<div class="card-body mx-auto">
 						<h4 class="card-title">Total Recovered</h4>
-						<h4 class="card-text text-center">${global.totalrecovered}</h4>
+						<h4 class="card-text text-center" style="color:white">${global.totalrecovered}</h4>
 					</div>
 				</div>
 			</div>
