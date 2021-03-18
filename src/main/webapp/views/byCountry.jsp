@@ -169,7 +169,7 @@ a {
 				<div class="row justify-content-center">
 					<div class="col-md-6 col-xs-12 about-company">
 						<h2>Developed By</h2>
-						<h4 class="pr-5 text-white-50">Navneet Singh,</h4>
+						<h4 class="pr-5 text-white-50">Manik Tyagi,</h4>
 						<h4 class="pr-5 text-white-50">
 							<i>CSE Student</i>
 						</h4>
