@@ -127,24 +127,7 @@ a {
 				<div class="row justify-content-center">
 					<div class="col-md-6 col-xs-12 about-company">
 						<h2>Developed By</h2>
-						<h4 class="pr-5 text-white-50">Navneet Singh,</h4>
-						<h4 class="pr-5 text-white-50">
-							<i>CSE Student</i>
-						</h4>
-					</div>
-					<div class="col-md-6">
-						<h2 class="mt-lg-0 mt-sm-3">Social Links</h2>
-						<ul class="m-0 p-0">
-							<h4 class="pr-5 text-white-50">
-								<a href="https://www.linkedin.com/in/navneetsingh1417">Linkedin</a>
-							</h4>
-							<h4 class="pr-5 text-white-50">
-								<a href="https://www.github.com/navneetsingh1417">Github</a>
-							</h4>
-							<h4 class="pr-5 text-white-50">
-								<a href="https://www.instagram.com/i_navneets">Instagram</a>
-							</h4>
-						</ul>
+						<h4 class="pr-5 text-white-50">Navneet Singh</h4>
 					</div>
 				</div>
 			</div>
